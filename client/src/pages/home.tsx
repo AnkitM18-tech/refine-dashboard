@@ -11,13 +11,13 @@ const home = () => {
       </Typography>
 
       <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
-        <PieChart title="Properties for Sale" value={684} series={[75,25]} colors={["#275be8","c4e8ef"]}/>
-        <PieChart title="Properties for Rent" value={550} series={[60,40]} colors={["#975be8","c4e8ef"]}/>
-        <PieChart title="Total Customers" value={5684} series={[75,25]} colors={["#921b98","c4e8ef"]}/>
-        <PieChart title="Properties for Cities" value={555} series={[75,25]} colors={["#175e00","c4e8ef"]}/>
+        <PieChart title="Properties for Sale" value={684} series={[75,25]} colors={["#275be8","#c4e8ef"]}/>
+        <PieChart title="Properties for Rent" value={550} series={[60,40]} colors={["#6C5DD3","#c4e8ef"]}/>
+        <PieChart title="Total Customers" value={5684} series={[75,25]} colors={["#FFCE73","#c4e8ef"]}/>
+        <PieChart title="Properties for Cities" value={555} series={[75,25]} colors={["#7FBA7A","#c4e8ef"]}/>
       </Box>
 
-      <Stack mt="25px" width="100%" direction={{xs:"column",lg:"row"}}>
+      <Stack mt="25px" width="100%" direction={{xs:"column",lg:"row"}} gap={4}>
         <TotalRevenue />
         <PropertyReferrals />
       </Stack>

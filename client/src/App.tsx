@@ -128,7 +128,7 @@ function App() {
         <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
         <RefineSnackbarProvider>
           <Refine
-            dataProvider={dataProvider("https://yariga-r0dh.onrender.com")}
+            dataProvider={dataProvider("https://yariga-r0dh.onrender.com/api/v1")}
             notificationProvider={notificationProvider}
             ReadyPage={ReadyPage}
             catchAll={<ErrorComponent />}

@@ -21,10 +21,10 @@ const AgentProfile = () => {
     return (
         <Profile
             type="Agent"
-            name={myProfile.name}
-            email={myProfile.email}
-            avatar={myProfile.avatar}
-            properties={myProfile.allProperties}
+            name={myProfile?.name}
+            email={myProfile?.email}
+            avatar={myProfile?.avatar}
+            properties={myProfile?.allProperties}
         />
     );
 };

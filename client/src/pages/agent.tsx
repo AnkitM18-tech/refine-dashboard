@@ -28,7 +28,7 @@ const Agents = () => {
           backgroundColor: "#fcfcfc"
         }}
       >
-        {allAgents.map((agent) => (
+        {allAgents.length > 0 && allAgents?.map((agent) => (
           <AgentCard 
             key={agent._id}
             id={agent._id}

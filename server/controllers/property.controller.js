@@ -82,7 +82,7 @@ const createProperty = async (req, res) => {
       creator: user._id,
     });
 
-    // user.allProperties.push(newProperty._id);
+    user.allProperties.push(newProperty._id);
     await user.save({ session });
 
     await session.commitTransaction();

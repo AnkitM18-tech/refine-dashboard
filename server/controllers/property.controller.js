@@ -122,7 +122,7 @@ const deleteProperty = async (req, res) => {
       "creator"
     );
     if (!propertyToDelete) throw new Error("Property not found");
-
+    /*
     const session = await mongoose.startSession();
     session.startTransaction();
 
@@ -131,6 +131,8 @@ const deleteProperty = async (req, res) => {
 
     await propertyToDelete.creator.save({ session });
     await session.commitTransaction();
+    */
+    propertyToDelete.deleteOne();
 
     res.status(200).json({ message: "Property Deleted Successfully!" });
   } catch (error) {
